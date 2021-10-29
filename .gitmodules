@@ -2,3 +2,7 @@
 	path = devtools/libraries
 	url = https://github.com/ejyanezp/aws-python-libraries.git
 	branch = main
+[submodule "devtools/templates"]
+	path = devtools/templates
+	url = https://github.com/ejyanezp/aws-python-templates.git
+	branch = main
