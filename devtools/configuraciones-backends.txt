@@ -1,0 +1,41 @@
+Formato en general (para nuevos backends):
+/<ambiente>/<tipo-backend>/<versión-backend>/<nombre-backend> = { JSON con todas las propiedades < 4KB }
+Se revisó y 4KB es suficiente, pues permite almacenar todos los credenciales de Oracle juntos
+
+Ejemplos:
+/dev/oracle/10/globals = { "query-timeout": 20, "pool-size": 10 } (general para todos los Oracle, unidad en segundos)
+/dev/oracle/10/panama-srv = (Cifrar todo el JSON)
+{
+   "host": "192.168.251.96",
+   "port": 1521,
+   "dbname": "prolinux",
+   "username": "srv_olegprobd",
+   "password": "srv_olegprobd",
+   "query-timeout": 20, (específico, opcional, override del global)
+   "pool-size": 10  (específico, opcional, override del global)
+}
+
+/ha/oracle/19/panama-srv =
+{
+   "host": "192.168.200.232",
+   "port": 1521,
+   "dbname": "prolinux",
+   "username": "SRV_OLEGPROBD",
+   "password": "SRV_OLEGPROBD",
+   "query-timeout": 20, 
+   "pool-size": 10
+}
+
+/dev/sql/2016/globals = { "query-timeout": 20, "pool-size": 10 } (general para todos los SQL Server, unidad en segundos)
+
+/dev/sql/2016/bcredicorp = 
+{
+   "host": "192.168.251.155",
+   "port": 1433,
+   "dbname": "bcredicorp",
+   "username": "db_innovacion",
+   "password": "db_innovacion",
+   "query-timeout": 20, (específico, opcional, override del global)
+   "pool-size": 10  (específico, opcional, override del global)   
+}
+

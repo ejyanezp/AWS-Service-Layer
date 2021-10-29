@@ -1,0 +1,1 @@
+Estructurado por verticales de negocio

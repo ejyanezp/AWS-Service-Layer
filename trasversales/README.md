@@ -1,0 +1,1 @@
+Estrcuturados por areas de la organización que dan servicio a 2 o mas verticales de negocio
