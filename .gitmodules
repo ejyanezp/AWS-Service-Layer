@@ -1,0 +1,4 @@
+[submodule "devtools/libraries"]
+	path = devtools/libraries
+	url = https://github.com/ejyanezp/aws-python-libraries.git
+	branch = main
