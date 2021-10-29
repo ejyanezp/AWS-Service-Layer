@@ -1,12 +1,12 @@
 [submodule "devtools/libraries"]
 	path = devtools/libraries
 	url = https://github.com/ejyanezp/aws-python-libraries.git
-	branch = main
+	update = merge
 [submodule "devtools/templates"]
 	path = devtools/templates
 	url = https://github.com/ejyanezp/aws-python-templates.git
-	branch = main
+	update = merge
 [submodule "devtools/sqs-queue-consumers"]
 	path = devtools/sqs-queue-consumers
 	url = https://github.com/ejyanezp/aws-sqs-queue-consumers.git
-	branch = main
+	update = merge
